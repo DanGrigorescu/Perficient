@@ -4,6 +4,7 @@
     --color-accent: #F0BE6F;
     --color-headings: #1B0760;
     --color-body: #918CA4; 
+    --color-border: #ccc;
     
 }
 
@@ -245,7 +246,7 @@ a {
 
  .input {
     padding: 1.5rem 2.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border);
     border-radius: 30px;
     outline: 0;
     color: var(--color-headings);
@@ -256,11 +257,30 @@ a {
         color: cdcbd7
     }
 
+
+.input-group {
+   border: 1px solid var(--color-border);
+   border-radius: 30px;
+   display: flex;
+
+}
+
+.input-group .input {
+   border: 0;
+   flex-grow: 1;
+   padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+   margin: 4px;
+}
+
+
 @media screen and (min-width: 1024px) {
     .input {
         font-size: 1.5rem;
     }
-}
+} 
 
 
 
