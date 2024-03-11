@@ -29,6 +29,8 @@ h1,
 h2,
 h3 {
   color: var(--color-headings);
+  margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -455,14 +457,8 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .grid--1x2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .grid--1x3 {
-    grid-template-columns: repeat(3, 1fr);
+  .grid1x2 {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -586,7 +582,6 @@ a {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
-  border: 2px solid red;
 }
 
 .block__header {
@@ -681,5 +676,31 @@ a {
 
   .nav__item {
     border: 0;
+  }
+}
+/* Hero */
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
