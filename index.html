@@ -11,8 +11,425 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <header>
+      <nav class="nav collapsible collapsible--expanded">
+        <a class="nav__brand" href="/"
+          ><img class="logo" src="images/logoscris.png" alt=""
+        /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">About</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+          <li class="nav__item"><a href="#">Pricing</a></li>
+          <li class="nav__item"><a href="#">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="block block--dark block-skewed-left hero">
+      <div class="container grid grid1x2">
+        <header aclass="block__header hero__content" data-aos="zoom-in-up">
+          <h1 class="block__heading">Social Media Expert</h1>
+          <p class="hero__tagline">Grow your bussiness fast and stress free</p>
+          <a href="" class="btn btn--accent btn--stretched">Get started</a>
+        </header>
+        <picture data-aos="zoom-in">
+          <source
+            type="image/webp"
+            srcset="images/banner.webp 1x, images/banner@2x.webp 2x" />
+          <source
+            type="image/png"
+            srcset="images/banner.png 1x, images/banner@2x.png 2x" />
+          <img class="hero__image" src="images/banner.png" alt=""
+        /></picture>
+      </div>
+    </section>
+
+    <section class="block container block-questions">
+      <header class="block__header" data-aos="fade-up">
+        <h2>Common questions and answears</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          veritatis est ea suscipit quidem nostrum?
+        </p>
+      </header>
+
+      <div class="input-group" data-aos="fade-up">
+        <input type="text" class="input" placeholder="Write questions here" />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use></svg
+          >Search
+        </button>
+      </div>
+      <ul class="list block-questions__tags">
+        <li><span class="badge badge--secondary">What</span></li>
+        <li>Where</li>
+        <li>How</li>
+        <li>When</li>
+        <li>Who</li>
+        <li>Why</li>
+      </ul>
+    </section>
+
+    <section class="block container block-plans">
+      <div class="grid grid1x3">
+        <div class="plan">
+          <div class="card card--secondary" data-aos="fade-right">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$149</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--popular">
+          <div class="card card--primary" data-aos="fade-up">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$149</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary" data-aos="fade-left">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$149</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block container">
+      <header class="block__header">
+        <h2>Highly effective social media strategies</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+          magnam.
+        </p>
+      </header>
+      <article class="grid grid1x2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Simplicity</h3>
+          <p>
+            Simplicity is an important principle for us. Therefore, we believe in
+            clarity in our strategies, which makes them both effective and easy to
+            follow.
+          </p>
+          <a href="#" class="link-arrow">LEARN MORE</a>
+        </div>
+        <picture data-aos="fade-right">
+          <source
+            type="image/webp"
+            srcset="images/simplicity.webp 1x, images/simplicity@2x.webp 2x" />
+          <source
+            type="image/png"
+            srcset="images/simplicity.png 1x, images/simplicity@2x.png 2x" />
+          <img class="feature__image" src="images/simplicity.png" alt=""
+        /></picture>
+      </article>
+    
+      <article class="grid grid1x2 feature">
+        <div class="feature__content" data-aos="fade-left">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#snap"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Transparency</h3>
+          <p>
+            Transparency is an important part of our work. You have the opportunity
+            to follow our activities, understand the decisions we make and see the
+            results we achieve. We strive for openness and trust in our
+            collaboration
+          </p>
+          <a href="#" class="link-arrow">LEARN MORE</a>
+        </div>
+        <picture data-aos="fade-left">
+          <source
+            type="image/webp"
+            srcset="images/transparency.webp 1x, images/transparency@2x.webp 2x" />
+          <source
+            type="image/png"
+            srcset="images/transparency.png 1x, images/transparency@2x.png 2x" />
+          <img class="feature__image" src="images/transparency.png" alt=""
+        /></picture>
+      </article>
+    
+      <article class="grid grid1x2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#growth"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Results</h3>
+          <p>
+            Achieving results is always our primary focus. By tailoring a digital
+            strategy that is adapted to your needs, we ensure that your goals are
+            achieved. Finally, we pride ourselves on offering timely insights and
+            keeping you updated on the latest trends in digital marketing
+          </p>
+          <a href="#" class="link-arrow">LEARN MORE</a>
+        </div>
+        <picture data-aos="fade-right">
+          <source
+            type="image/webp"
+            srcset="images/results.webp 1x, images/results@2x.webp 2x" />
+          <source
+            type="image/png"
+            srcset="images/results.png 1x, images/results@2x.png 2x" />
+          <img class="feature__image" src="images/results.png" alt=""
+        /></picture>
+      </article>
+    </section>
+    
+
+    <section class="block block--dark block-skewed-right block-showcase">
+      <header class="block__header">
+        <h2 class="block__heading">Why Choose Perficient Media?</h2>
+      </header>
+      <div class="container grid grid1x2">
+        <picture class="block-showcase__image" data-aos="fade-right">
+          <source
+            type="image/webp"
+            src="images/Showcase.webp 1x, images/Showcase@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            src="images/Showcase.png 1x, images/Showcase@2x.png 2x"
+          />
+          <img src="images/Showcase.png" alt="" />
+        </picture>
+        <ul class="list" data-aos="fade-up">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                </svg><svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#growth"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Real Expertise</h3>
+                <p>Start with results from the get go with the right strategy selection and execution to meet your needs.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                </svg><svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Long Term Partner</h3>
+                <p>Commit to growth with a partner who understands how to navigate marketing channels and scale.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                </svg><svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#computer"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Creative Content</h3>
+                <p>Stunning social media posts showcasing your jewelry or informative blog articles spotlighting your craftsmanship.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <img src="" alt="" />
+      </div>
+    </section>
+
+    <section class="block">
+      <header class="block__header">
+        <h2>What our Customers are Saying</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, unde?</p>
+      </header>
+      <div class="container" data-aos="fade-up">
+        <div class="card testimonial">
+          <div class="grid grid1x2">
+            <div class="testimonial__image">
+              <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+                optio officiis dolore earum error eaque perferendis laudantium sed
+                praesentium dolorum.
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary quote__line">
+                      <use xlink:href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">John Smith</h3>
+                    <p class="quote__organization">CEO alibaba</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <div class="container">
+      <div class="callout callout--primary">
+        <div class="grid grid1x2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Ready To Get Started</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+              assumenda nam? Cum quod repudiandae maxime laboriosam laudantium saepe
+              ullam, ab libero corrupti, mollitia molestiae corporis cupiditate nihil
+              provident quos aut.
+            </p>
+          </div>
+          <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header footer__heading">
+            <h2 class="collapsible__heading">Company</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+        </section>
+  
+        <section class="collapsible footer__section">
+          <header class="collapsible__header footer__heading">
+            <h2 class="collapsible__heading">Marketing Pricing & Costs</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Social Media Management</a></li>
+              <li><a href="#">Short Video Management</a></li>
+              <li><a href="#">Email Marketing</a></li>
+              <li><a href="#">Affordable Digital</a></li>
+            </ul>
+          </div>
+        </section>
+  
+        <section class="collapsible footer__section">
+          <header class="collapsible__header footer__heading">
+            <h2 class="collapsible__heading">Marketing guides</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Online Advertising</a></li>
+              <li><a href="#">Web Marketing</a></li>
+              <li><a href="#">Marketing Strategy Types</a></li>
+              <li><a href="#">Promote Products Online</a></li>
+            </ul>
+          </div>
+        </section>
+  
+        <section class="collapsible footer__section">
+          <header class="collapsible__header footer__heading">
+            <h2 class="collapsible__heading">Platform Marketing</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Facebook Marketing</a></li>
+              <li><a href="#">Instagram Marketing</a></li>
+              <li><a href="#">LinkedIn Marketing</a></li>
+              <li><a href="#">Tiktok Marketing</a></li>
+            </ul>
+          </div>
+        </section>
+  
+        <section class="footer__brand">
+          <img class="footer__logo" src="images/logoscris.png" alt="" />
+          <p class="footer_copywrigt">Copyrigt 2024 Perficient Media</p>
+          <p class="footer__copywrigt">Baia Mare Romania</p>
+        </section>
+      </div>
+    </footer>
+
+    
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
